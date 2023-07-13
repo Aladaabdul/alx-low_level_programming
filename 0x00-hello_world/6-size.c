@@ -8,8 +8,8 @@ int main(void)
 {
 	char c;
 	int i;
-	long ll;
-	long long l;
+	long l;
+	long long ll;
 	float f;
 
 	printf("size of a char:%lu byte(s)\n",sizeof(c));
@@ -17,5 +17,6 @@ int main(void)
 	prinf("size of a long int:%lu byte(s)\n",sizeof(l));
 	printf("size of a long long int:%lu byte(s)\n",sizeof(ll));
 	printf("size of a float:%lu byte(s)\n",sizeof(f));
+	
 	return (0);
 }
