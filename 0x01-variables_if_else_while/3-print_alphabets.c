@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * Main - Entry point
+ * main - Entry point
  *
- * Return: 0
+ * Return: Alawys 0
  */
 int main(void)
 {
