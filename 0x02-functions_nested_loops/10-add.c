@@ -7,6 +7,5 @@
  */
 int add(int a, int n)
 {
-	cal = int a + int n;
-	return (cal);
+	return (int a + int b);
 }
