@@ -9,5 +9,5 @@ int add(int a, int n)
 {
 	int cal = int a + int n;
 
-	return (call);
+	return (cal);
 }
