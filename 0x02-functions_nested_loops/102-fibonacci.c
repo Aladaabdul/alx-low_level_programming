@@ -17,4 +17,5 @@ int main(int n)
 	fib2 = fib_next;
 	}
 	printf("\n");
+	return (0);
 }
