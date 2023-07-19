@@ -1,11 +1,11 @@
 #include "main.h"
 /**
  * add - adds two integers
- * @a: formal parameter
- * @n: formal parameter
+ * @n1: formal parameter
+ * @n2: formal parameter
  * Return: 0
  */
-int add(int a, int n)
+int add(int n1, int n2)
 {
-	return (int a + int b);
+	return (int n1 + int n2);
 }
