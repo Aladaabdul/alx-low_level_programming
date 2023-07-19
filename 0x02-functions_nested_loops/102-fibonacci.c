@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * print_fibo - print fibo numbers
+ * main - print fibo numbers
  *@n: Formal parameter
  * Return: always 0
  */
-void print_fibo(int n)
+int main(int n)
 {
 	int fib1 = 1, fib2 = 2, fib_next, i;
 
