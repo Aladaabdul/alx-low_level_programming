@@ -1,16 +1,17 @@
 #include "main.h"
 /**
- * puts2 - function
- * @str: Formal paramter
- * Retrun: 0;
+ * puts2 - Entry point
+ * @str: Formal parameter
+ * Return: 0
  */
 void puts2(char *str)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (str[i] != '\0')
 	{
 		_putchar(str[i]);
-		i += 1;
+		i += 2;
 	}
+	_putchar('\n');
 }
