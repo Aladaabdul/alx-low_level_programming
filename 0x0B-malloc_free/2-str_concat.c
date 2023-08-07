@@ -10,8 +10,17 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *new;
+	size_t s1_len;
+	size_t s2_len;
+	size_t len;
 
-	size_t len = strlen(s1) + strlen(s2) + 1;
+	if (s1 == NULL && s2 == NULL)
+	{
+		return (NULL);
+	}
+	s1_len = (s1 != NULL) ? strlen(s1) : 0;
+	s2_len = (s2 != NULL) ? strlen(s2) : 0;
+	len = s1_len + s2_len + 1;
 
 	new = malloc(len);
 
@@ -19,7 +28,13 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	strcpy(new, s1);
-	strcat(new, s2);
+	if (s1 != NULL)
+	{
+		strcpy(new, s1);
+	}
+	if (s2 != NULL)
+	{
+		strcat(new, s2);
+	}
 	return (new);
 }
