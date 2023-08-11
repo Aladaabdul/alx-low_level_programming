@@ -9,7 +9,7 @@
  */
 int *array_range(int min, int max)
 {
-	int total = max - min;
+	int total = max - min + 1;
 	int *daniel;
 	int i;
 
@@ -17,7 +17,7 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	daniel = malloc(sizeof(int) * total + 1);
+	daniel = malloc(sizeof(int) * total);
 	if (daniel == NULL)
 	{
 		return (NULL);
