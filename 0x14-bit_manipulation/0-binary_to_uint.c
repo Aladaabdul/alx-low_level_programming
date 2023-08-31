@@ -2,7 +2,7 @@
 #include <string.h>
 #include "main.h"
 /**
- * binary_to_unit - converts a binary number
+ * binary_to_uint - converts a binary number
  * @b: Binary
  * Return: unsigned int
  */
@@ -12,6 +12,7 @@ unsigned int binary_to_uint(const char *b)
 	int i;
 
 	int length = strlen(b);
+
 	for (i = 0; i < length; i++)
 	{
 		if (b[i] == '1')
