@@ -13,19 +13,22 @@ unsigned int binary_to_uint(const char *b)
 
 	int length = strlen(b);
 
-	for (i = 0; i < length; i++)
+	if (*b)
 	{
-		if (b[i] == '1')
+		for (i = 0; i < length; i++)
 		{
-			num = (num << 1) | 1;
-		}
-		else if (b[i] == '0')
-		{
-			num = num << 1;
-		}
-		else
-		{
-			return (0);
+			if (b[i] == '1')
+			{
+				num = (num << 1) | 1;
+			}
+			else if (b[i] == '0')
+			{
+				num = num << 1;
+			}
+			else
+			{
+				return (0);
+			}
 		}
 	}
 	return (num);
